@@ -5,7 +5,7 @@ import CustomBtn from './Ui/CustomBtn'
 import { CiLocationArrow1 } from "react-icons/ci";
 const Hero = () => {
   return (
-    <section className='pb-20 pt-36'>
+    <section className='pb-20 pt-36' id='home'>
       <div>
         <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-28 h-screen' fill='white' />
         <Spotlight className='top-10 left-full h-[50vh] w-[50vw]' fill='purple' />
@@ -29,7 +29,6 @@ const Hero = () => {
               text='Show my work'
               icon={<CiLocationArrow1 />}
               position='right'
-
             />
           </a>
         </div>
