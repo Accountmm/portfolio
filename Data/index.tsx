@@ -86,6 +86,14 @@ export const projects = [
     iconLists: ["/ts.svg", "/re.svg", "/sass.svg", "/vite.svg"],
     link: "https://github.com/Accountmm/Weather",
   },
+  {
+    id: 3,
+    title: "Conference",
+    des: "Conference is a place where you hava meetings or chats with colleagues, friends and so on...`",
+    img: "/Conference.png",
+    iconLists: ["/ts.svg", "/re.svg", "/sass.svg", "/vite.svg", "/stream.svg"],
+    link: "https://github.com/Accountmm/Conference",
+  },
 ];
 
 export const testimonials = [
