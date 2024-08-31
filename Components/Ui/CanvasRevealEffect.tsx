@@ -3,6 +3,7 @@ import { cn } from "@/Utils/cn";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
+import { getUniforms } from "three/examples/jsm/Addons.js";
 
 export const CanvasRevealEffect = ({
   animationSpeed = 0.4,
@@ -116,7 +117,7 @@ const DotMatrix: React.FC<DotMatrixProps> = ({
         type: "uniform1f",
       },
     };
-  }, [colors, opacities, totalSize, dotSize]);
+  }, [colors, opacities, totalSize, dotSize, getUniforms]);
 
   return (
     <Shader

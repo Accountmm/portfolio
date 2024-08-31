@@ -10,6 +10,7 @@ import { cn } from "@/Utils/cn";
 import { GlobeDemo } from "./GridGlobe";
 import CustomBtn from "./CustomBtn";
 import { BackgroundGradientAnimation } from "./GradientsBg";
+import Image from "next/image";
 // import animationData from '@/data/confetti.json';
 
 export const BentoGrid = ({
@@ -37,7 +38,7 @@ export const BentoGridItem = ({
   id,
   title,
   description,
-  //   remove unecessary things here
+
   img,
   imgClassName,
   titleClassName,
@@ -91,10 +92,12 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Image
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center ")}
+              width={100}
+              height={50}
             />
           )}
         </div>
@@ -103,10 +106,11 @@ export const BentoGridItem = ({
             } `}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
-              //   width={220}
+              width={220}
+              height={220}
               className="object-cover object-center w-full h-full"
             />
           )}
@@ -173,7 +177,7 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-                <img src="/confetti.gif" alt="confetti" />
+                <Image src="/confetti.gif" alt="confetti" width={20} height={20} />
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
