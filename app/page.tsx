@@ -4,7 +4,7 @@ import Grid from '@/Components/Grid';
 import Hero from '@/Components/Hero'
 import RecentProjects from '@/Components/RecentProjects';
 import { FloatingNav } from '@/Components/Ui/NavBar'
-import { navItems } from '@/Data';
+import { navItems } from '@/data';
 import Head from 'next/head';
 import React from 'react'
 

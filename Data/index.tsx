@@ -90,7 +90,7 @@ export const projects = [
     id: 3,
     title: "Conference",
     des: "Conference is a place where you hava meetings or chats with colleagues, friends and so on...`",
-    img: "/Conference.png",
+    img: "/Conference.svg",
     iconLists: ["/ts.svg", "/re.svg", "/sass.svg", "/vite.svg", "/stream.svg"],
     link: "https://github.com/Accountmm/Conference",
   },

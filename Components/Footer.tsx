@@ -1,7 +1,7 @@
 import React from 'react'
 import CustomBtn from './Ui/CustomBtn'
 import { FaLocationArrow } from 'react-icons/fa'
-import { socialMedia } from '@/Data'
+import { socialMedia } from '@/data'
 import Link from 'next/link'
 import Image from 'next/image'
 

@@ -117,7 +117,7 @@ const DotMatrix: React.FC<DotMatrixProps> = ({
         type: "uniform1f",
       },
     };
-  }, [colors, opacities, totalSize, dotSize, getUniforms]);
+  }, [colors, opacities, totalSize, dotSize]);
 
   return (
     <Shader

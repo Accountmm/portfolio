@@ -1,7 +1,6 @@
 {
   "type": "FeatureCollection",
-  "features": [
-    {
+  "features": [{
       "type": "Feature",
       "geometry": {
         "type": "MultiPolygon",
@@ -45,9 +44,9 @@
         ]
       },
       "properties": {
-        "name": "Afghanistan"
+        "name": "Uzbekistan"
       },
-      "id": "AF"
+      "id": "UZ"
     },
     {
       "type": "Feature",

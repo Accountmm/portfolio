@@ -96,9 +96,9 @@ export function Globe({ globeConfig, data }: WorldProps) {
       _buildData();
       _buildMaterial();
     }
-  }, [globeRef.current]);
+  }, [globeRef, _buildData, _buildMaterial]);
 
-  const _buildMaterial = () => {
+  function _buildMaterial() {
     if (!globeRef.current) return;
 
     const globeMaterial = globeRef.current.globeMaterial() as unknown as {
@@ -113,7 +113,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
     globeMaterial.shininess = globeConfig.shininess || 0.9;
   };
 
-  const _buildData = () => {
+  function _buildData() {
     const arcs = data;
     let points = [];
     for (let i = 0; i < arcs.length; i++) {
@@ -162,9 +162,9 @@ export function Globe({ globeConfig, data }: WorldProps) {
         });
       startAnimation();
     }
-  }, [globeData]);
+  }, [globeData, globeRef, defaultProps, startAnimation]);
 
-  const startAnimation = () => {
+  function startAnimation() {
     if (!globeRef.current || !globeData) return;
 
     globeRef.current
@@ -221,7 +221,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
     return () => {
       clearInterval(interval);
     };
-  }, [globeRef.current, globeData]);
+  }, [globeRef.current, globeData, data.length]);
 
   return (
     <>
@@ -237,7 +237,7 @@ export function WebGLRendererConfig() {
     gl.setPixelRatio(window.devicePixelRatio);
     gl.setSize(size.width, size.height);
     gl.setClearColor(0xffaaff, 0);
-  }, []);
+  }, [size.height, size.height]);
 
   return null;
 }

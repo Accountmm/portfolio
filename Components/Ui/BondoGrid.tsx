@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
-import animationData from "@/Data/confetti.json";
+import animationData from "@/data/confetti.json";
 import { cn } from "@/Utils/cn";
 
 
@@ -11,7 +11,6 @@ import { GlobeDemo } from "./GridGlobe";
 import CustomBtn from "./CustomBtn";
 import { BackgroundGradientAnimation } from "./GradientsBg";
 import Image from "next/image";
-// import animationData from '@/data/confetti.json';
 
 export const BentoGrid = ({
   className,

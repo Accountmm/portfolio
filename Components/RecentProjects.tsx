@@ -1,4 +1,4 @@
-import { projects } from '@/Data'
+import { projects } from '@/data'
 import React from 'react'
 import { PinContainer } from './Ui/PinContainer'
 import { FaLocationArrow } from 'react-icons/fa'
