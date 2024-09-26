@@ -1,9 +1,9 @@
 import React from 'react'
 import CustomBtn from './Ui/CustomBtn'
 import { FaLocationArrow } from 'react-icons/fa'
-import { socialMedia } from '@/data/index'
 import Link from 'next/link'
 import Image from 'next/image'
+import { socialMedia } from '@/data'
 
 const Footer = () => {
   return (
