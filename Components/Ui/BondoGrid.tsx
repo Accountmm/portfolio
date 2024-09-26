@@ -5,9 +5,7 @@ import Lottie from "react-lottie";
 import animationData from "@/data/confetti.json";
 import { cn } from "@/Utils/cn";
 
-
 // import MagicButton from "../MagicButton";
-import { GlobeDemo } from "./GridGlobe";
 import CustomBtn from "./CustomBtn";
 import { BackgroundGradientAnimation } from "./GradientsBg";
 import Image from "next/image";
@@ -134,7 +132,20 @@ export const BentoGridItem = ({
           </div>
 
           {/* for the github 3d globe */}
-          {id === 2 && <GlobeDemo />}
+          {id === 2 && <div className="flex  w-fit absolute right-5  bottom-5">
+            <span
+              className="flex gap-2 items-center lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+            >
+              <Image
+                width={27}
+                height={27}
+                alt="clock"
+                src={'/clock.png'}
+                className="invert-[100%]"
+              />
+              Time flexibility
+            </span>
+          </div>}
 
           {/* Tech stack list div */}
           {id === 3 && (
