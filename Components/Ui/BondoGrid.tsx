@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
-import animationData from "@/data/confetti.json";
 import { cn } from "@/Utils/cn";
 
 // import MagicButton from "../MagicButton";
@@ -58,7 +57,6 @@ export const BentoGridItem = ({
   const defaultOptions = {
     loop: copied,
     autoplay: copied,
-    animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -188,7 +186,6 @@ export const BentoGridItem = ({
                   }`}
               >
                 <Image src="/confetti.gif" alt="confetti" width={20} height={20} />
-                <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
               <CustomBtn
