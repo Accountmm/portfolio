@@ -192,11 +192,3 @@ export const workExperience = [
     thumbnail: "/exp4.svg",
   },
 ];
-
-export const socialMedia = [
-  {
-    id: 1,
-    img: "/git.svg",
-    link: 'https://github.com/Accountmm'
-  },
-];

@@ -3,7 +3,14 @@ import CustomBtn from './Ui/CustomBtn'
 import { FaLocationArrow } from 'react-icons/fa'
 import Link from 'next/link'
 import Image from 'next/image'
-import { socialMedia } from '@/data'
+
+const socialMedia = [
+  {
+    id: 1,
+    img: "/git.svg",
+    link: 'https://github.com/Accountmm'
+  },
+];
 
 const Footer = () => {
   return (
