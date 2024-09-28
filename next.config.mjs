@@ -6,6 +6,5 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  base: 'portfolio'
 };
 export default nextConfig;
