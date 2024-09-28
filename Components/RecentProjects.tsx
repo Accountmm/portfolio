@@ -1,8 +1,34 @@
-import { projects } from '@/data'
 import React from 'react'
 import { PinContainer } from './Ui/PinContainer'
 import { FaLocationArrow } from 'react-icons/fa'
 import Image from 'next/image'
+
+const projects = [
+  {
+    id: 1,
+    title: "Apple",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    img: "/p4.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://github.com/Accountmm/Apple",
+  },
+  {
+    id: 2,
+    title: "Weather",
+    des: "Beautiful website to show weather of cities around the world...",
+    img: "/weather.png",
+    iconLists: ["/ts.svg", "/re.svg", "/sass.svg", "/vite.svg"],
+    link: "https://github.com/Accountmm/Weather",
+  },
+  {
+    id: 3,
+    title: "Conference",
+    des: "Conference is a place where you hava meetings or chats with colleagues, friends and so on...`",
+    img: "/Conference.svg",
+    iconLists: ["/ts.svg", "/re.svg", "/sass.svg", "/vite.svg", "/stream.svg"],
+    link: "https://github.com/Accountmm/Conference",
+  },
+];
 
 const RecentProjects = () => {
   return (

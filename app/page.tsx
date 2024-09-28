@@ -4,9 +4,14 @@ import Grid from '@/Components/Grid';
 import Hero from '@/Components/Hero'
 import RecentProjects from '@/Components/RecentProjects';
 import { FloatingNav } from '@/Components/Ui/NavBar'
-import { navItems } from '@/data';
-import Head from 'next/head';
 import React from 'react'
+
+const navItems = [
+  { name: "Home", link: "#home" },
+  { name: "About", link: "#about" },
+  { name: "Projects", link: "#projects" },
+  { name: "Contact", link: "#contact" },
+];
 
 const page = () => {
 
